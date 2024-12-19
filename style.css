@@ -1,0 +1,72 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #0f0; /* Green text for "hacker" effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Hack Container */
+.hack-container {
+    text-align: center;
+    animation: flicker 2s infinite;
+}
+
+/* Hack Content */
+.hack-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icons */
+.hack-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+/* Status Text */
+#hack-status {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+/* Progress */
+#hack-progress {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+/* Flicker Effect */
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.9;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hack-icon {
+        font-size: 60px;
+    }
+
+    #hack-status {
+        font-size: 20px;
+    }
+
+    #hack-progress {
+        font-size: 30px;
+    }
+}
